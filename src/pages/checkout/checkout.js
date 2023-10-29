@@ -7,7 +7,7 @@ const CheckoutPage = () => {
   const [cartItems, setCartItems] = useState([]);
   const [subtotal, setSubtotal] = useState(0);
   const { userId } = useContext(UserContext);
-  const [shipping, setShipping] = useState(0); // Example shipping cost
+  //const [shipping, setShipping] = useState(0); // Example shipping cost
   const [total, setTotal] = useState(0);
   const [isLoading, setIsLoading] = useState(true); // Add loading state
 
@@ -45,8 +45,8 @@ const CheckoutPage = () => {
   }, [userId]);
 
   useEffect(() => {
-    setTotal(subtotal + shipping);
-  }, [subtotal, shipping]);
+    setTotal(subtotal);
+  }, [subtotal]);
 
   const handlePayment = () => {
     // Implement the payment logic here
