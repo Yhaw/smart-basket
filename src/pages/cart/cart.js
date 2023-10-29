@@ -37,7 +37,7 @@ const Cart = () => {
   
     const intervalId = setInterval(() => {
       fetchCartItems();
-    }, 5000);
+    }, 1100);
   
     // Clean up the interval when the component unmounts
     return () => {
