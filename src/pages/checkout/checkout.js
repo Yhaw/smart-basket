@@ -60,7 +60,7 @@ const CheckoutPage = () => {
           <span className="brand-name">SmartCart</span>
           <span className="test-mode">TEST MODE</span>
         </div>
-        <div className="amount-due">${total.toFixed(2)}</div>
+        <div className="amount-due">GHS{total.toFixed(2)}</div>
       </div>
 
       {isLoading ? (
@@ -72,15 +72,15 @@ const CheckoutPage = () => {
               <div className="item" key={item.product_id}>
                 <div className="item-name">{item.product_name}</div>
                 <div className="item-details">
-                  Qty {item.quantity} × ${(item.price ? parseFloat(item.price).toFixed(2) : 'N/A')} each
+                  Qty {item.quantity} × GHS{(item.price ? parseFloat(item.price).toFixed(2) : 'N/A')} each
                 </div>
               </div>
             ))}
           </div>
 
           <div className="totals-section">
-            <div className="subtotal">Subtotal: ${subtotal.toFixed(2)}</div>
-             <div className="total">Total due: ${total.toFixed(2)}</div>
+            <div className="subtotal">Subtotal: GHS{subtotal.toFixed(2)}</div>
+             <div className="total">Total due: GHS{total.toFixed(2)}</div>
           </div>
 
           <div className="payment-section">
