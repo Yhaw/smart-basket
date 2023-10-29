@@ -117,7 +117,7 @@ const CheckoutPage = () => {
               <label htmlFor="sameAddress">Billing address is same as shipping</label>
             </div>
             <div className="pay-button final" onClick={handlePayment}>
-              Pay ${total.toFixed(2)}
+              Pay GHS {total.toFixed(2)}
             </div>
           </div>
         </div>
