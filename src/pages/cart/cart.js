@@ -93,7 +93,7 @@ const Cart = () => {
         ))}
       </ul>
       <div className="total">
-        <p>Total: ${total.toFixed(2)}</p>
+        <p>Total: GHS {total.toFixed(2)}</p>
       </div>
       <button className="checkout-button" onClick={handleCheckout}>
         Checkout
